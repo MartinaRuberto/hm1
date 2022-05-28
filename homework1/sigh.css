@@ -1,0 +1,106 @@
+body::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(0,0,0,.6);
+}
+
+main{
+    z-index: 1;
+}
+body{
+    background-image: url("header_movies.jpg");
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sigh{
+    display: flex;
+    border: solid black;
+    padding: 8% 15%;
+    background-color:rgba(0,0,0,0.8);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main div{
+
+    margin: 20px;
+}
+label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin-bottom: 10%;
+  
+  color: white;
+}
+input{
+    margin-left: 0.5em;
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+}
+.sigh h1{
+    color:white;
+    margin-bottom: 5%;
+   font-weight: bolder;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+    color: blue;
+}
+
+input[type='submit']{
+    margin-top: 3%;
+    background-color: #fa1c2c;
+    color:white;
+  padding: 6%;
+  border-radius: 5px;
+ font-size: 15px;
+  width: 100%;
+}
+
+.errorj{
+    color: #fa1c2c;
+}
+.login{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.login a{
+    color: blue;
+   
+}
+.login a:hover{
+    color:red;
+    text-decoration : underline;
+   }
+ 
+   .login a:active{
+     color : Red;
+     text-decoration: underline;
+   }
+
+
+   .errore{
+    color: #fa1c2c;
+    margin-left: 10px;
+}
