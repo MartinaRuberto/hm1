@@ -1,0 +1,351 @@
+body{
+    
+    margin:0;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 25px ;
+    font-style:normal ;
+    font-weight:normal ;
+    background-color: rgb(24, 23, 23);
+    text-align: left;
+    
+
+}
+#home{
+    display: flex;
+    justify-content: center;
+}
+a{
+  cursor: pointer;
+}
+
+#link{
+  margin-right: 0%;
+}
+#link a:hover{
+   color:red;
+   text-decoration : underline;
+  }
+
+  #link a:active{
+    color : Red;
+    text-decoration: underline;
+  }
+
+
+
+#link a{
+  color: white;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+text-decoration: none;
+
+}
+  
+  .button{
+    font-family: 'Play', sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    font-weight:bold;
+    color: black;
+    
+  }
+
+  #Logo{
+    color: red;
+      font-size: 50px;
+      font-family:fantasy;
+      font-style: oblique;
+      font-weight:lighter;
+      padding: 5px;
+      text-align: left;
+    }
+    header::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    header{
+    color:black;
+    display: flex;
+    background-image: url("header_movies.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 800px;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  header nav{
+    background-color:black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    height: 12%;
+  }
+
+  form{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+    text-align: center;
+    margin-bottom: 10%;
+    color: white;
+    z-index: 1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+ form h2{
+   font-size: 40px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  input[type='submit']{
+    color:black;
+  padding: 1%;
+  border-radius: 5px;
+    font-size: 15px;
+    width: 40%;
+  }
+
+  input[type='text']{
+    margin-top: 2%;
+    margin-bottom: 3%;
+  padding: 1%;
+  width: 50%;
+  border-radius: 5px;
+    font-size: 15px;
+  }
+.immagine{
+    width: 100%;
+}
+
+.checkbox1{
+
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+
+}
+
+.checkbox2{
+
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+.name{
+
+    size: 20px;
+    text-align: center;
+    color: black;
+   
+
+}
+
+
+
+.container_movie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} 
+
+.container{
+  height: 30%;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    border:solid #dcdcdc 1px ;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.optional{
+     display: flex;
+     flex-direction: row;
+}
+
+.not_found{
+
+  color: white;
+  font-size: 40px;
+}
+
+/*.hidden{
+ text-decoration: none;
+}*/
+
+footer{
+  padding: 40px;
+  background-color:rgb(98, 4, 4);
+  margin-top: 50px;
+  height: 100px;
+}
+
+footer address, footer p{
+  font-size:30px ;
+  text-align: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: lighter;
+  font-style:oblique;
+  color: aliceblue;
+}
+
+.links_mobile{
+  display: none;
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100vh;
+  width: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 2;  
+}
+
+.mobile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100vh;
+  width:-webkit-fill-available;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 2;
+  
+}
+
+#menu{
+  display: none;
+}
+
+.no-scroll{
+  overflow: hidden;
+}
+
+.mobile a:hover{
+
+    color:red;
+    text-decoration : underline;
+   }
+ 
+  .mobile a:active{
+     color : Red;
+     text-decoration: underline;
+   }
+
+   .mobile a{
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+text-decoration: none;
+  }
+
+@media (max-width: 500px) {
+    
+  #link a{
+    display: none;
+    }
+
+    
+    #info h2{
+      font-size: 20px;
+    }
+
+  #menu div{
+    display: block;
+    cursor: pointer;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 15px;
+  }
+
+
+
+  .button{
+    font-size: 0.6em;
+ }
+ 
+ 
+
+  #Logo{
+      font-size: 1.3em;
+  }
+
+  
+  header{
+      height: 70vh;
+  }
+
+      footer address, footer p{
+
+    font-size: 0.8em;
+                           }
+  footer
+{
+ height: 10vh;
+
+}
+
+.name{
+
+  font-size: 14px;
+  text-align: center;
+  color: white;
+ 
+
+}
+
+.container{
+
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  width: 39%;
+  box-sizing: border-box;
+  background-color: transparent;
+  border:solid gray 1px ;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin: 2%;
+}
+section p{
+
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  color: darkred;
+ }
+}

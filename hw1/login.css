@@ -1,0 +1,112 @@
+body::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(0,0,0,0.6);
+}
+.signup{
+color: white;
+
+}
+main{
+    z-index: 1;
+}
+body{
+    background-image: url("header_movies.jpg");
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.login{
+  
+    display: flex;
+    border: solid black;
+    padding: 15%;
+    background-color:rgba(0,0,0,0.8);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 7px;
+}
+main div{
+
+    margin: 20px;
+}
+label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin-bottom: 10%;
+  
+  color: white;
+}
+input{
+    margin-left: 0.5em;
+    padding: 10px;
+}
+.login h1{
+    color:white;
+    margin-bottom: 5%;
+   font-weight: bolder;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+    color: rgb(0, 42, 255);
+    text-decoration: none;
+}
+
+.signup a:hover{
+    color:red;
+    text-decoration : underline;
+   }
+ 
+   .signup a:active{
+     color : Red;
+     text-decoration: underline;
+   }
+
+input[type='submit']{
+    background-color: #fa1c2c;
+    color:white;
+  padding: 6%;
+  border-radius: 5px;
+    width: 100%;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.error{
+    color: #fa1c2c;
+}
+
+
+.bordo{
+    color: #fa1c2c;
+}
+
+.errore{
+    color: #fa1c2c;
+    margin-left: 5px;
+}
+@media(max-width: 500px) {
+
+    .login{
+        padding: 10%;
+        
+    }
+}

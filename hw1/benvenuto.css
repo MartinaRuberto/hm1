@@ -1,0 +1,208 @@
+body{
+    margin:0;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 25px ;
+    font-style:normal ;
+    font-weight:normal ;
+    color:white;
+    background-color: rgb(24, 23, 23);
+    text-align: left;
+}
+a{
+    cursor: pointer;
+
+  }
+  #link a:hover{
+    color:red;
+    text-decoration : underline;
+   }
+ 
+   #link a:active{
+     color : Red;
+     text-decoration: underline;
+   }
+
+
+  #link a{
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+
+  }
+  
+  .button{
+    font-family: 'Play', sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    font-weight:bold;
+  
+  }
+     a.button {
+        text-align: center;
+      padding:10px 7px;
+      border: 2px solid black;
+      border-radius: 50px;
+      margin:100px;
+      display: inline-block;
+      background-color: white;
+      text-decoration: none;
+      color: red;
+    }
+    
+   a.button:hover {
+    cursor: pointer;
+      background-color: red;
+      color: white;
+    }
+
+    #Logo{
+        color: red;
+        font-size: 50px;
+        font-family:fantasy;
+        font-style: oblique;
+        font-weight:lighter;
+        padding: 5px;
+        text-align: left;
+      }
+
+      header::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+  
+      #info{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       z-index:1;
+    }
+
+    #info h1,h2,h3{
+        color: white;
+    }
+    #info h1{
+        margin-top: 50px;
+    }
+  header{
+    color:black;
+    display: flex;
+    background-image: url("header_movies.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 800px;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  header nav{
+    background-color:black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+  }
+.immagine{
+    width: 100%;
+}
+
+.checkbox1{
+
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+
+}
+
+.checkbox2{
+
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+.name{
+
+    size: 20px;
+    text-align: center;
+
+}
+
+.descrizione{
+    size: 10px;
+    text-align: center;
+}
+
+.container_movie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} 
+
+.container{
+
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    border:solid #dcdcdc 1px ;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 500px) {
+    
+  #link a{
+    font-size: 0.9em ;
+  }
+
+  .button{
+    font-size: 0.6em;
+ }
+ 
+  #info strong{
+     margin-top: 6em;
+      font-size: 1em;
+  }
+
+  #Logo{
+      font-size: 1.3em;
+  }
+
+  #info h1,h2{
+      font-size:0.7em ;
+      text-align: center;
+  }
+
+  header{
+      height: 100vh;
+  }
+
+  
+  }
